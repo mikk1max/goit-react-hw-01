@@ -1,0 +1,62 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCard {
+  composes: flex-center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.userInfo {
+  padding: 20px;
+
+  & p {
+    color: #808080;
+    font-size: 1.5rem;
+  }
+
+  & p:nth-child(2) {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  & img {
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    max-width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.userStatsList {
+  display: flex;
+  width: 100%;
+  background-color: #d3d3d3;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 1.2rem;
+
+  & li {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    border-top: #808080 2px solid;
+    padding: 10px;
+  }
+
+  & li:not(:last-child) {
+    border-right: #808080 2px solid;
+  }
+
+  & li span:last-child {
+    font-weight: bold;
+  }
+}
