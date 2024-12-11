@@ -1,0 +1,28 @@
+.cardItem {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  width: calc((100% - 4 * 20px) / 5);
+  border-radius: 8px;
+
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & p:nth-child(2) {
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  & .isOnline {
+    color: #008001;
+  }
+
+  & .isOffline {
+    color: #ff0000;
+  }
+}

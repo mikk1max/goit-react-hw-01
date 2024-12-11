@@ -1,6 +1,7 @@
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  padding: 20px;
 }
 
 h1,
@@ -22,5 +23,5 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }

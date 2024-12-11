@@ -1,0 +1,28 @@
+.historyTransaction {
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
+  border-collapse: collapse;
+
+  & th,
+  td {
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  & th {
+    background-color: #2a2a2a;
+    color: white;
+  }
+
+  & tr:nth-child(2n) {
+    background-color: #d3d3d3;
+  }
+
+  & td:first-child {
+    /* text-align: left; */
+    text-transform: capitalize;
+    margin-left: 50px;
+  }
+}
